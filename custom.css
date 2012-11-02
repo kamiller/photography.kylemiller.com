@@ -1,0 +1,134 @@
+.notLoggedIn .nophotos {
+display: none; 
+}
+
+/* ----------------- */
+/* display only the galleries box on the /galleries page */
+.homepage #galleriesBox,
+.homepage #categoriesBox,
+.homepage #featuredBox {
+display: none;
+}
+
+#logo{
+margin-top: 5px;
+}
+
+.galleries #bioBox {
+display: none;
+}
+
+#breadCrumbTrail {
+display:none;
+}
+
+.galleries #galleriesBox,
+.galleries #categoriesBox,
+.galleries #featuredBox {
+display: block;
+}
+.loggedIn .homepage #galleriesBox,
+.loggedIn .homepage #categoriesBox {
+display: block;
+}
+
+.galleries #slideshowBox {display: none;} 
+.galleries #photoVideoBox {display: none;} 
+/* end /galleries page section */
+
+/* ----------------------------- */
+/* navigation */
+
+#navcontainer
+/* ,#customHeaderContainer */
+{
+   background: url(http://photography.kylemiller.com/photos/i-RS8NDV2/0/L/i-RS8NDV2-L.png);
+margin-top: 5px;
+border-top: 1px #444 solid;
+border-bottom: 1px #444 solid;
+}
+
+#navcontainer ul {
+    margin: 0;
+    margin-right: 10px;
+    padding: 5px;
+    list-style-type: none;
+    text-align: right;
+}
+
+#navcontainer ul li { 
+    display: inline; 
+}
+
+#navcontainer ul li a {
+    text-decoration: none;
+    padding: .2em 1em;
+    color: #B3B3B3;  
+/*    background-color: #4C4C4C; */
+
+}
+
+#navcontainer ul li a:hover {
+ /*   color: #4C4C4C;  */
+  color: #fff;
+ /*   background-color: #B3B3B3; */
+}
+/* end of navigation */
+/* ------------------------------ */
+
+#km-footer {
+text-align:center;
+font-size: .9em;
+color: #666;
+font-family: helvetica,sans serif;
+}
+
+#contact {
+width: 500px;
+margin: 0 auto -25px;
+}
+#contact .message {
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: .8em;
+}
+
+#km-container {
+width: 940px;
+margin: 0 auto -25px;
+}
+
+.left {float:left;}
+.right {float:right;}
+hr.clear {clear:both;border:none;}
+
+#upgrades {padding-right:50px;}
+
+.service-item {clear:both;}
+
+ .service-item-left h3,
+.service-item-right h3 {font-size:2.5em; font-weight:bold;}
+.service-item-left,
+.service-item-right {position:relative;height:400px;}
+.service-item-left .description {position:absolute; top:125px; left: 5px;width: 500px; height:200px;text-align:center;}
+.service-item-left img {position:absolute; right:5px; top:25px;}
+
+.service-item-right .description {position:absolute; top:125px; right: 5px; width: 500px; height:200px;text-align:center;}
+.service-item-right img{position:absolute; left:5px; top:25px;}
+
+hr.separator {clear:both;display:none;}
+
+.attention {position:relative;}
+.attention {padding:.8em;margin-bottom:2em;border:2px solid #ddd;margin-top:1em; border-radius: 5px;}
+.attention {background:#E6EFC2;color:#264409;border-color:#C6D880;}
+.attention a {color:#264409;}
+.attention ul li {list-style-type:disc; margin-bottom: .5em; margin-top:0em;}
+.attention ul {margin-bottom: 0em;}
+.attention {clear: both;}
+.attention .title {font-size:2em;font-weight:bold;color:#264409;}
+
+#contact-button {position:absolute; top:10px; right:10px;}
+#contact-button:hover {cursor:hand;}
+
+.note {	font-size: 0.8em; color: #C7BCB2;}
+a.note {font-weight:normal;font-style:italic;}

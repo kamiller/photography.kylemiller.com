@@ -1,0 +1,128 @@
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>untitled</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Kyle Miller">
+	<!-- Date: 2012-02-11 -->
+</head>
+<body>
+	<script type="text/javascript"> id = 123489; </script>
+	<script type="text/javascript" src="http://kontactr.com/wp.js"></script>
+	
+	 <!--
+	<script>
+	var RecaptchaOptions = {
+	   theme: 'custom',
+	   lang: 'en',
+	   custom_theme_widget: 'recaptcha_widget'
+	};
+	</script>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("input[name=send]").click(function() {
+				// validate and process form here
+				var id = $('input[name=id]').val();
+				var name = $('input[name=name]').val();
+				var email = $('input[name=email]').val();
+				var subject = $('input[name=subject]').val();
+				var message = $('textarea[name=message]').val();
+				var recaptcha_challenge_field = $('input[name=recaptcha_challenge_field]').val();
+				var recaptcha_response_field = $('input[name=recaptcha_response_field]').val();
+
+				var dataString = 'id='+ id + '&name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message + '&recaptcha_challenge_field=' + recaptcha_challenge_field + '&recaptcha_response_field=' + recaptcha_response_field;
+				//alert(dataString);
+				$('#response').html("Sending...");
+
+				$.ajax({
+					type: "POST",
+					url: "http://kontactr.com/xuser/process",
+					data: dataString,
+					success: function(html) {
+						alert(html);
+							if(html == "1")
+							{
+								$('#response').html('<div class="error">All fields are required</div>');
+								$('input[value=]').first().focus();
+							}
+							else if(html == "2")
+							{
+								$('#response').html('<div class="error">Invalid email address</div>');
+								$('input[name=email]').focus();
+							}
+							else if(html == "3")
+							{
+								$('#response').html('<div class="error">Incorrect code entered</div>');
+								$('input[name=recaptcha_response_field]').focus();
+							}
+							else// if(html == "Success")
+							{
+								$('#kform').html('<div class="success">Your message has been sent successfully</div>');
+							}
+						}
+				});
+
+				return false;
+			});
+		});
+	</script>
+	
+
+	<form action="http://kontactr.com/xuser/process/123489" name="kform" method="post">			<input type="hidden" name="id" value="123489" />
+	<p>
+		<label>Name</label>
+		<input type="text" name="name" value="" class="span-6" />
+	</p>
+	<p>
+		<label>Email Address</label>
+		<input type="text" name="email" value="" class="span-6" />
+	</p>
+	<p>
+		<label>Subject</label>
+		<input type="text" name="subject" value="" class="span-9" />
+	</p>
+	<p>
+		<label>Message</label>
+		<textarea name="message" rows="8" cols="40" class="span-9"></textarea>
+	</p>
+	<div id="recaptcha_widget" style="display: none;">
+					<div id="recaptcha_image"></div> 
+					<div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div> 
+					 
+					<label class="recaptcha_only_if_image">Enter the words above:</label> 
+					<label class="recaptcha_only_if_audio">Enter the numbers you hear:</label> 
+					 
+					<input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="span-6" />  <a href="javascript:Recaptcha.showhelp()">?</a>
+					 
+					<div class="clear">
+						<small>
+							<span class="recaptcha_only_if_image">See</span>
+							<span class="recaptcha_only_if_audio">Listen to</span>
+							<a href="javascript:Recaptcha.reload()">different words</a> or 
+							<span class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')">listen to the words</a></span>
+							<span class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')">see the words</a></span>
+						</small>
+					</div>
+				</div>
+				<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LdVSccSAAAAAA2-zND1kv2wt0jAi3wIRwx76iDW"></script>
+
+	<noscript>
+  		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LdVSccSAAAAAA2-zND1kv2wt0jAi3wIRwx76iDW" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+	</noscript>			</p>
+
+			<p id="response">
+
+			</p>
+			<p class="prepend-2">
+				<input type="submit" name="send" value="Send" class="large" />
+			</p>
+		</form>
+-->
+
+</body>
+</html>
