@@ -7,25 +7,25 @@
 
 	<title>Kyle Miller Photography</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="jquery.simplemodal.1.4.1.min.js"></script>
 
-  
+
   <script type="text/javascript" charset="utf-8">
 
 	var data = [
 	 {'uri':'http://photos.kylemiller.com/photos/i-J7pmVBj/0/X3/i-J7pmVBj-X3.jpg','size':'cover'}
-	,{'uri':'http://photos.kylemiller.com/photos/i-GzvgFwK/0/X3/i-GzvgFwK-X3.jpg','size':'cover'} 
-	,{'uri':'http://photos.kylemiller.com/photos/i-PVvsbrM/0/X3/i-PVvsbrM-X3.jpg','size':'contain'} 
-	,{'uri':'http://photos.kylemiller.com/photos/i-Gn6pz9R/0/X3/i-Gn6pz9R-X3.jpg','size':'cover'} 
-	,{'uri':'http://photos.kylemiller.com/photos/i-Rb9Pgmg/0/X3/i-Rb9Pgmg-X3.jpg','size':'cover'} 
-	,{'uri':'http://photos.kylemiller.com/photos/i-9wbc6Zz/0/X3/i-9wbc6Zz-X3.jpg','size':'contain'} 
-	,{'uri':'http://photos.kylemiller.com/photos/i-GnSKnv9/0/X3/i-GnSKnv9-X3.jpg','size':'cover'} 
-	,{'uri':'http://photos.kylemiller.com/photos/i-PMQz92t/0/X3/i-PMQz92t-X3.jpg','size':'cover'} 
+	,{'uri':'http://photos.kylemiller.com/photos/i-GzvgFwK/0/X3/i-GzvgFwK-X3.jpg','size':'cover'}
+	,{'uri':'http://photos.kylemiller.com/photos/i-PVvsbrM/0/X3/i-PVvsbrM-X3.jpg','size':'contain'}
+	,{'uri':'http://photos.kylemiller.com/photos/i-Gn6pz9R/0/X3/i-Gn6pz9R-X3.jpg','size':'cover'}
+	,{'uri':'http://photos.kylemiller.com/photos/i-Rb9Pgmg/0/X3/i-Rb9Pgmg-X3.jpg','size':'cover'}
+	,{'uri':'http://photos.kylemiller.com/photos/i-9wbc6Zz/0/X3/i-9wbc6Zz-X3.jpg','size':'contain'}
+	,{'uri':'http://photos.kylemiller.com/photos/i-GnSKnv9/0/X3/i-GnSKnv9-X3.jpg','size':'cover'}
+	,{'uri':'http://photos.kylemiller.com/photos/i-PMQz92t/0/X3/i-PMQz92t-X3.jpg','size':'cover'}
 	,{'uri':'http://photos.kylemiller.com/photos/i-VvvMLr9/0/X3/i-VvvMLr9-X3.jpg','size':'contain'}
 	];
 
-	$(window).load(function(){ 
+	$(window).load(function(){
 		toggleLoading();
 
 		$('#content-link').click(function() {
@@ -43,7 +43,7 @@
 		});
 
 		var queue = $({});
-		
+
 		$(data).each(function(index, img) {
 			queue.queue('thumbnail', function(next) {
 				createThumbnail(img);
@@ -51,15 +51,15 @@
 			});
 
 		});
-		
+
 		queue.dequeue('thumbnail');
-		
+
 	});
-	
+
 	function toggleLoading() {
 		$('#loading').toggle();
 	}
-	
+
 	function createThumbnail(img) {
 		var a = $('<a href=\'#\'/>').hide();
 		var li = $('<li />').hide();
@@ -76,7 +76,7 @@
 			display(img);
 		});
 	}
-	
+
 	function display(img) {
 		toggleLoading();
 		$('#images').fadeOut(function() {
@@ -90,13 +90,13 @@
 
 		});
 	}
-	
+
 	function content() {
 		$('#content').modal({'minWidth':175});
 	}
-	
+
   </script>
-  
+
   <style type="text/css" media="screen">
 	* { margin:0; padding:0; }
 	body {
@@ -152,11 +152,11 @@ hr.clear {clear:both;background:#000;}
 }
 
 	#images {  display:block; position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
-	
+
 	#thumbnails {opacity:0.5;position:absolute;top:61px;right:25px; background:#000;padding: 0px 2px 2px 2px;border-radius: 5px;}
 	#thumbnails li {list-style-type:none;padding-top:2px;}
 	#thumbnails li a {display:block;width: 32px; height:32px;background-repeat: no-repeat;background-position:center;padding:12px;border-radius: 5px;}
-		
+
 	/* ######################################################################### */
 	/* MODAL */
 
@@ -190,7 +190,7 @@ hr.clear {clear:both;background:#000;}
 
 	/* ########################################################################### */
 	/* Button */
-	
+
 	.button {
 		display: inline-block;
 		zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
@@ -204,7 +204,7 @@ hr.clear {clear:both;background:#000;}
 		font: 18px/100% Arial, Helvetica, sans-serif;
 		padding: .5em 1em .5em;
 		text-shadow: 0 1px 1px rgba(0,0,0,.3);
-		-webkit-border-radius: .5em; 
+		-webkit-border-radius: .5em;
 		-moz-border-radius: .5em;
 		border-radius: .5em;
 		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
@@ -218,7 +218,7 @@ hr.clear {clear:both;background:#000;}
 		position: relative;
 		top: 1px;
 	}
-	
+
 	/* orange */
 	.orange {
 		color: #fef4e9;
@@ -240,7 +240,7 @@ hr.clear {clear:both;background:#000;}
 		background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
 		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
 	}
-	
+
 	/* green */
 	.green {
 		color: #e8f0de;
@@ -264,7 +264,7 @@ hr.clear {clear:both;background:#000;}
 	}
 
   </style>
-  
+
 </head>
 
 <body>
@@ -282,7 +282,7 @@ hr.clear {clear:both;background:#000;}
 <ul id="thumbnails">
 	<!-- <li><img src="http://photos.kylemiller.com/photos/i-WrB3Ffk/0/X3/i-WrB3Ffk-X3.png" width="50px" height="16.75px"/></li> -->
 	<!-- <li><a class="img1" href="javascript:one();"></a></li>
-	<li><a class="img2" href="javascript:two();"></a></li>	
+	<li><a class="img2" href="javascript:two();"></a></li>
 	<li><a class="img3" href="javascript:three();"></a></li>
 	<li><a class="img4" href="javascript:four();"></a></li> -->
 </ul>
